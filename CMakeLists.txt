@@ -3,4 +3,4 @@ project(EnseaSH C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(EnseaSH main.c)
+add_executable(EnseaSH main.c fonctions.h q1.c q2.c)
