@@ -5,13 +5,19 @@
 #include <string.h>
 
 void bienvenue(){
-    char buffer[] = "\nBienvenue dans le Shell ENSEA. \nPour quitter, tappez 'exit'. \nenseash %\n";
+    char buffer[] = "\nBienvenue dans le Shell ENSEA. \nPour quitter, tappez 'exit'. \n";
+    write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
+}
+
+void prompt(){
+    char buffer[] = "enseash %\n";
     write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
 }
 
 int main() {
 
     bienvenue();
+    prompt();
 
     return 0;
 
