@@ -17,23 +17,23 @@ void execute(char commande[MAXSIZE]){
 void q3() {
     int nbChar;
     int status;
-    char commande[MAXSIZE];
+    char command[MAXSIZE];
 
     bienvenue();
     prompt();
 
 
     while(1){
-        nbChar = read(STDIN_FILENO, commande, MAXSIZE);
-        commande[nbChar-1] = '\0';
+        nbChar = read(STDIN_FILENO, command, MAXSIZE);
+        command[nbChar-1] = '\0';
 
-        if(strcmp(commande, "exit")==0 || strcmp(commande,"")==0){
+        if(strcmp(command, "exit")==0 || strcmp(command,"")==0){
             endProg();
         }
 
         pid_t pid= fork();
         if (pid == 0){ // child code
-            execute(commande);
+            execute(command);
         }
         else if (pid > 0){
             wait(&status);
