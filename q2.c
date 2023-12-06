@@ -1,10 +1,10 @@
 //
 // Created by valeprio54 on 29/11/23.
-//
+// This code allows the program to run a task and to go back to the prompt instead of being terminated once the task is over
 
 #include "fonctions.h"
 
-void lecture() {
+void q2() {
 
     //char buffer[256];
     //int nb_octet = read(STDIN_FILENO, buffer, 64); //nb_octet récupère le nombre d'octets réellement lus par read().
@@ -24,16 +24,15 @@ void lecture() {
     nb_octet = read(STDIN_FILENO, command, MAXSIZE);
     command[nb_octet - 1] = '\0';
 
-    pid_t ret = fork();
+    pid_t pid = fork();
 
-    if (ret == 0){
+    if (pid == 0){ //child code
         execlp(command,command,NULL);
-        exit(EXIT_FAILURE);
+        exit(EXIT_SUCCESS);
     }
 
-    else{
-        wait(&status);
+    else if (pid > 0){ //father code
+        wait(&status); //waiting for the child to finish its task
         prompt();
     }
-
 }

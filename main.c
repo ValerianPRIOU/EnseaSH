@@ -2,9 +2,11 @@
 
 int main() {
 
-    bienvenue();
-    prompt();
-    lecture();
+    //bienvenue();
+    //prompt();
+    //q2();
+    q3();
+    //q4();
 
     return 0;
 

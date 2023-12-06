@@ -13,7 +13,7 @@ void bienvenue(){
 
 void prompt(){
 
-    char buffer[] = "enseash %\n";
+    char buffer[] = "enseash % ";
     write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
 
 }

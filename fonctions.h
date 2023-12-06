@@ -20,4 +20,6 @@
 
 void bienvenue();
 void prompt();
-void lecture();
+void q2();
+void q3();
+void q4();

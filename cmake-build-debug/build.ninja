@@ -73,6 +73,30 @@ build CMakeFiles/EnseaSH.dir/q3.c.o: C_COMPILER__EnseaSH_Debug /users/valeprio54
   OBJECT_DIR = CMakeFiles/EnseaSH.dir
   OBJECT_FILE_DIR = CMakeFiles/EnseaSH.dir
 
+build CMakeFiles/EnseaSH.dir/q4.c.o: C_COMPILER__EnseaSH_Debug /users/valeprio54/CLionProjects/EnseaSH/q4.c || cmake_object_order_depends_target_EnseaSH
+  DEP_FILE = CMakeFiles/EnseaSH.dir/q4.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/EnseaSH.dir
+  OBJECT_FILE_DIR = CMakeFiles/EnseaSH.dir
+
+build CMakeFiles/EnseaSH.dir/q5.c.o: C_COMPILER__EnseaSH_Debug /users/valeprio54/CLionProjects/EnseaSH/q5.c || cmake_object_order_depends_target_EnseaSH
+  DEP_FILE = CMakeFiles/EnseaSH.dir/q5.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/EnseaSH.dir
+  OBJECT_FILE_DIR = CMakeFiles/EnseaSH.dir
+
+build CMakeFiles/EnseaSH.dir/q6.c.o: C_COMPILER__EnseaSH_Debug /users/valeprio54/CLionProjects/EnseaSH/q6.c || cmake_object_order_depends_target_EnseaSH
+  DEP_FILE = CMakeFiles/EnseaSH.dir/q6.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/EnseaSH.dir
+  OBJECT_FILE_DIR = CMakeFiles/EnseaSH.dir
+
+build CMakeFiles/EnseaSH.dir/q7.c.o: C_COMPILER__EnseaSH_Debug /users/valeprio54/CLionProjects/EnseaSH/q7.c || cmake_object_order_depends_target_EnseaSH
+  DEP_FILE = CMakeFiles/EnseaSH.dir/q7.c.o.d
+  FLAGS = -g -std=gnu99
+  OBJECT_DIR = CMakeFiles/EnseaSH.dir
+  OBJECT_FILE_DIR = CMakeFiles/EnseaSH.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target EnseaSH
@@ -81,7 +105,7 @@ build CMakeFiles/EnseaSH.dir/q3.c.o: C_COMPILER__EnseaSH_Debug /users/valeprio54
 #############################################
 # Link the executable EnseaSH
 
-build EnseaSH: C_EXECUTABLE_LINKER__EnseaSH_Debug CMakeFiles/EnseaSH.dir/main.c.o CMakeFiles/EnseaSH.dir/q1.c.o CMakeFiles/EnseaSH.dir/q2.c.o CMakeFiles/EnseaSH.dir/q3.c.o
+build EnseaSH: C_EXECUTABLE_LINKER__EnseaSH_Debug CMakeFiles/EnseaSH.dir/main.c.o CMakeFiles/EnseaSH.dir/q1.c.o CMakeFiles/EnseaSH.dir/q2.c.o CMakeFiles/EnseaSH.dir/q3.c.o CMakeFiles/EnseaSH.dir/q4.c.o CMakeFiles/EnseaSH.dir/q5.c.o CMakeFiles/EnseaSH.dir/q6.c.o CMakeFiles/EnseaSH.dir/q7.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/EnseaSH.dir
   POST_BUILD = :
