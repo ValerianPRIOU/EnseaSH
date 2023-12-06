@@ -16,6 +16,9 @@
 #define PROMPT_EXIT "enseash [exit:%d] %"
 #define PROMPT_SIGN "enseash [sign:%d] %"
 
+#define PROMPT_EXIT_TIME "enseash [exit:%d|%.2fms] %"
+#define PROMPT_SIGN_TIME "enseash [sign:%d|%.2fms] %"
+
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -31,6 +34,7 @@ void bienvenue();
 void prompt();
 void endProg();
 void execute();
+void print();
 
 void q1();
 void q2();

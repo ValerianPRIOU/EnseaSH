@@ -2,8 +2,11 @@
 // Created by valeprio54 on 06/12/23.
 //
 
-#include <sys/wait.h>
 #include "fonctions.h"
+
+struct timespec start;
+struct timespec end;
+double duration; //time est déjà pris
 
 void q5() {
 
@@ -22,6 +25,8 @@ void q5() {
             endProg();
         }
 
+        clock_gettime(CLOCK_MONOTONIC, &start);
+
         pid_t pid = fork();
         if (pid == 0) { // child code
 
@@ -31,15 +36,23 @@ void q5() {
 
             wait(&status);
 
+            clock_gettime(CLOCK_MONOTONIC, &end);
+            duration = (end.tv_sec - start.tv_sec)/1e3 + (end.tv_nsec - start.tv_nsec)/1e6;
+
             if (WIFEXITED(status)) {
-                sprintf(command,PROMPT_EXIT, WIFEXITED(status));
+                sprintf(command,PROMPT_EXIT_TIME, WIFEXITED(status),duration);
+                //write(STDOUT_FILENO, PROMPT_EXIT, sizeof(PROMPT_EXIT) - 1);
+                //printf(PROMPT_EXIT,status);
             }
 
             else if (WIFSIGNALED(status)) {
-                sprintf(command,PROMPT_SIGN, WTERMSIG(status));
+                sprintf(command,PROMPT_SIGN_TIME, WTERMSIG(status),duration);
+                //write(STDOUT_FILENO, PROMPT_SIGN, sizeof(PROMPT_SIGN) - 1);
+                //printf(PROMPT_SIGN,status);
             }
 
-            prompt();
+            print(command);
         }
     }
 }
+
