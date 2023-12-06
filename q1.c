@@ -6,14 +6,14 @@
 
 void bienvenue(){
 
-    char buffer[] = "\nBienvenue dans le Shell ENSEA. \nPour quitter, tappez 'exit'. \n";
+    char buffer[] = msg_welcome;
     write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
 
 }
 
 void prompt(){
 
-    char buffer[] = "enseash % ";
+    char buffer[] = msg_prompt;
     write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
 
 }

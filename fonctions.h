@@ -16,8 +16,8 @@
 #define PROMPT_EXIT "enseash [exit:%d] %"
 #define PROMPT_SIGN "enseash [sign:%d] %"
 
-#define PROMPT_EXIT_TIME "enseash [exit:%d|%.2fms] %"
-#define PROMPT_SIGN_TIME "enseash [sign:%d|%.2fms] %"
+#define PROMPT_EXIT_TIME "enseash [exit:%d|%.2fms] %% "
+#define PROMPT_SIGN_TIME "enseash [sign:%d|%.2fms] %% "
 
 #include <stdio.h>
 #include <unistd.h>
@@ -41,3 +41,4 @@ void q2();
 void q3();
 void q4();
 void q5();
+void q6();
