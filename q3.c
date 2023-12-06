@@ -35,6 +35,7 @@ void q3() {
         commande[nbChar-1] = '\0';
 
         if(strcmp(commande, "exit")==0 || strcmp(commande,"")==0){
+
             endProg();
         }
 
