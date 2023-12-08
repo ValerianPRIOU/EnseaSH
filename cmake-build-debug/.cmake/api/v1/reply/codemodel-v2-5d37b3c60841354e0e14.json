@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "EnseaSH::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-EnseaSH-Debug-855b1b89eb6cf6f3a901.json",
+					"jsonFile" : "target-EnseaSH-Debug-1973aa61ef1d55d0ccce.json",
 					"name" : "EnseaSH",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/users/valeprio54/CLionProjects/EnseaSH/cmake-build-debug",
-		"source" : "/users/valeprio54/CLionProjects/EnseaSH"
+		"build" : "/home/uplink/Documents/ENSEA/ProgSys/PushSTP/cmake-build-debug",
+		"source" : "/home/uplink/Documents/ENSEA/ProgSys/PushSTP"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 6
 	}
 }

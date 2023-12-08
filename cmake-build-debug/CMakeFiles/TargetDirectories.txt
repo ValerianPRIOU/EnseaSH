@@ -1,3 +1,3 @@
-/users/valeprio54/CLionProjects/EnseaSH/cmake-build-debug/CMakeFiles/EnseaSH.dir
-/users/valeprio54/CLionProjects/EnseaSH/cmake-build-debug/CMakeFiles/edit_cache.dir
-/users/valeprio54/CLionProjects/EnseaSH/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/uplink/Documents/ENSEA/ProgSys/PushSTP/cmake-build-debug/CMakeFiles/EnseaSH.dir
+/home/uplink/Documents/ENSEA/ProgSys/PushSTP/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/uplink/Documents/ENSEA/ProgSys/PushSTP/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,27 @@
+Programmation système : TP de synthèse.
+
+Ce TP a été réalisé en binôme par Valérian PRIOU et Karim JERJOUB.
+Enseash est le nom du terminal qu'on essaie de produire dans ce TP.
+
+Nous sommes allés jusqu'à la question 7, que nous n'avons pas réussi à finir.
+Chaque question est réalisée sur un fichier indépendant.
+Il suffit simplement de décommenter la question que vous voulez build/éxecuter depuis le main.
+
+Nous avons regroupé les différentes fonctions que nous avons élaborées (mis à part les questions en elles-même) dans un fichier
+"fonctions.c"
+
+
+
+Rapport d'étonnement :
+
+Ce TP nous aura permis de développer un shell basique.
+Celui-ci peut effectuer différentes commandes classiques, notamment des commandes comprenant plusieurs arguments.
+Une fonctionnalité de "sortie" y est prévue en entrant 'exit'.
+Ce terminal identifie les codes de retour et les signaux des commandes éxecutées (WIFEXITED, WIFSGNALED..).
+Le temps d'exécution de chaque commande y est affiché.
+
+On a essayé de rendre ce code le plus lisible et accessible possible, cela est passé notamment par l'architecture du code : découpé
+en plusieurs fichiers contenant chaqe questions, un header et un fichier "fonctions.c" pour ne pas avoir de fonctions
+réparties dans différents fichiers et qu'on ne s'y retrouve plus.
+
+Ce projet a représenté une expérience enrichissante, nous préparant efficacement pour une éventuelle carrière dans l'informatique.

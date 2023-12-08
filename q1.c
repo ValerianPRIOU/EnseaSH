@@ -4,16 +4,9 @@
 
 #include "fonctions.h"
 
-void bienvenue(){
+void q1(){
 
-    char buffer[] = msg_welcome;
-    write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
-
-}
-
-void prompt(){
-
-    char buffer[] = msg_prompt;
-    write(STDOUT_FILENO, buffer, sizeof(buffer) - 1);
+    bienvenue();
+    prompt();
 
 }

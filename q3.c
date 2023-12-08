@@ -1,44 +1,38 @@
 //
-// Created by valeprio54 on 29/11/23.
+// Created by uplink on 08/12/23.
 //
 
 #include "fonctions.h"
 
-void endProg(){
-    write(STDOUT_FILENO, msg_exit, strlen(msg_exit));
-    exit(EXIT_SUCCESS);
-}
-
-void execute(char commande[MAXSIZE]){
-    execlp(commande,commande, NULL);
-    exit(EXIT_SUCCESS);
-}
-
 void q3() {
-    int nbChar;
-    int status;
+
     char command[MAXSIZE];
+    int nb_byte;
+    int status;
 
     bienvenue();
     prompt();
 
+    while (1) {
 
-    while(1){
-        nbChar = read(STDIN_FILENO, command, MAXSIZE);
-        command[nbChar-1] = '\0';
+        nb_byte = read(STDIN_FILENO, command, MAXSIZE);
+        command[nb_byte - 1] = '\0';
 
-        if(strcmp(command, "exit")==0 || strcmp(command,"")==0){
-            endProg();
+        if(strcmp(command, "exit") == 0 || strcmp(command, "") == 0){
+            endProg(); //ends the program if the user inputs "exit" or nothing.
         }
 
-        pid_t pid= fork();
-        if (pid == 0){ // child code
+        pid_t pid = fork();
+
+        if (pid == 0) {
             execute(command);
         }
-        else if (pid > 0){
+
+        else if (pid > 0) {
             wait(&status);
             prompt();
         }
-    }
-}
 
+    }
+
+}
